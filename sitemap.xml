@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>ecuadordigitalpages.site/Casa.html</loc>
-        <lastmod>2025-03-17T14:32:30-05:00</lastmod>
+        <loc>ecuadordigitalpages.site/Ecuador-Digital-Pages.html</loc>
+        <lastmod>2025-03-17T20:27:22-05:00</lastmod>
     </url>
     <url>
         <loc>ecuadordigitalpages.site/index.html</loc>
-        <lastmod>2025-03-17T14:32:30-05:00</lastmod>
+        <lastmod>2025-03-17T20:27:22-05:00</lastmod>
     </url>
     <url>
-        <loc>ecuadordigitalpages.site/Acerca-de.html</loc>
-        <lastmod>2025-03-17T11:16:04-05:00</lastmod>
+        <loc>ecuadordigitalpages.site/Servicios.html</loc>
+        <lastmod>2025-03-17T19:44:11-05:00</lastmod>
     </url>
     <url>
-        <loc>ecuadordigitalpages.site/Contacto.html</loc>
-        <lastmod>2025-03-17T11:16:04-05:00</lastmod>
+        <loc>ecuadordigitalpages.site/Sobre-nosotros.html</loc>
+        <lastmod>2025-03-17T19:32:47-05:00</lastmod>
+    </url>
+    <url>
+        <loc>ecuadordigitalpages.site/Contáctenos.html</loc>
+        <lastmod>2025-03-17T19:39:57-05:00</lastmod>
     </url>
     <url>
         <loc>ecuadordigitalpages.site/blog/enviar.html</loc>
@@ -42,38 +46,6 @@
     </url>
     <url>
         <loc>ecuadordigitalpages.site/blog/blog.html</loc>
-        <lastmod>2025-03-17T14:32:38-05:00</lastmod>
-    </url>
-    <url>
-        <loc>ecuadordigitalpages.site/products/zapados-de-mujer.html</loc>
-        <lastmod>2025-03-17T11:16:05-05:00</lastmod>
-    </url>
-    <url>
-        <loc>ecuadordigitalpages.site/products/playeras-de-hombre.html</loc>
-        <lastmod>2025-03-17T11:16:05-05:00</lastmod>
-    </url>
-    <url>
-        <loc>ecuadordigitalpages.site/products/sombrero-de-verano.html</loc>
-        <lastmod>2025-03-17T11:16:05-05:00</lastmod>
-    </url>
-    <url>
-        <loc>ecuadordigitalpages.site/products/guantes-de-piel.html</loc>
-        <lastmod>2025-03-17T11:16:05-05:00</lastmod>
-    </url>
-    <url>
-        <loc>ecuadordigitalpages.site/products/sandalias.html</loc>
-        <lastmod>2025-03-17T11:16:05-05:00</lastmod>
-    </url>
-    <url>
-        <loc>ecuadordigitalpages.site/products/falda-de-ni-a.html</loc>
-        <lastmod>2025-03-17T11:16:05-05:00</lastmod>
-    </url>
-    <url>
-        <loc>ecuadordigitalpages.site/products/products.html</loc>
-        <lastmod>2025-03-17T14:32:39-05:00</lastmod>
-    </url>
-    <url>
-        <loc>ecuadordigitalpages.site/thank-you-page.html</loc>
-        <lastmod>2025-03-17T11:16:04-05:00</lastmod>
+        <lastmod>2025-03-17T20:27:31-05:00</lastmod>
     </url>
 </urlset>

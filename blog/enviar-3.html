@@ -7,7 +7,12 @@
     <title>Encabezado de la Publicación 4</title>
 <script>
     function gdprConfirmed() {
-        return true;
+        return document.cookie.split(';').filter(function(item) {
+            var val = item.trim().split('=');
+            val = decodeURIComponent(val[1] || '');
+            try { val = JSON.parse(val); } catch (e) { val = {}; }
+            return val && val.analytics;
+        }).length;
     }
     if (gdprConfirmed()) {
     document.write("\
@@ -29,7 +34,7 @@
     
     
     
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-theme-google-font" rel="stylesheet" href="/fonts.css">
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -38,10 +43,28 @@
 		"sameAs": []
 }</script>
     <meta name="theme-color" content="#478ac9">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="/" data-include-products="true" class="u-body u-xl-mode" data-lang="es"><!-- Google Tag Manager (noscript) -->
+  <script>window._u_GDPRConfirmCode = function () {<script>
+  if (document.cookie.includes("cookies_aceptadas=true")) {
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtag/js?id=' + i;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','G-SV7WSTPPY9');
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-SV7WSTPPY9');
+  }
+</script>
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head><body data-path-to-root="/" data-include-products="false" class="u-body u-xl-mode" data-lang="es">}
+  <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-SV7WSTPPY9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><header class="u-black u-clearfix u-container-align-center u-header u-sticky u-sticky-b08c" id="header" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+<!-- End Google Tag Manager (noscript) --><header class="u-black u-clearfix u-container-align-center u-header u-sticky" id="header" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <nav data-position="" class="u-align-center u-menu u-menu-one-level u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
             <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-hamburger-link-1" href="#">
@@ -53,8 +76,8 @@
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/" style="padding: 10px 20px;">Inicio</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 20px;">Servicios</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Acerca-de.html" style="padding: 10px 20px;">Acerca de</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Contacto.html" style="padding: 10px 20px;">Contacto</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Acerca de</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Contacto</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
@@ -63,8 +86,8 @@
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">Inicio</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link">Servicios</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Acerca-de.html">Acerca de</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Contacto.html">Contacto</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Acerca de</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Contacto</a>
 </li></ul>
               </div>
             </div>
@@ -130,6 +153,170 @@
           <span>Nicepage</span>
         </a>
       </p>
-    </section>
+    </section><section class="u-align-center u-clearfix u-container-align-center u-cookies-consent u-grey-80 u-cookies-consent" id="gdpr">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-43 u-layout-cell-1">
+                <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-1">
+                  <h3 class="u-text u-text-default u-text-1">Cookies &amp; Privacy</h3>
+                  <p class="u-text u-text-default u-text-2"> Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web.</p>
+                </div>
+              </div>
+              <div class="u-align-left u-container-align-center u-container-style u-layout-cell u-right-cell u-size-17 u-layout-cell-2">
+                <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-valign-middle-xl u-container-layout-2">
+                  <a href="" class="u-align-center u-btn u-button-decline u-button-style u-btn-1">Declinar</a>
+                  <a href="###" class="u-align-center u-btn u-button-confirm u-button-style u-palette-1-base u-btn-2">Confirmar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <style> .u-cookies-consent {
+  background-image: none;
+}
+
+.u-cookies-consent .u-sheet-1 {
+  min-height: 185px;
+}
+
+.u-cookies-consent .u-layout-wrap-1 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+  min-height: 150px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+  padding: 0 60px;
+}
+
+.u-cookies-consent .u-text-1 {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.u-cookies-consent .u-text-2 {
+  margin: 8px 20px 0 0;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+  min-height: 153px;
+}
+
+.u-cookies-consent .u-container-layout-2 {
+  padding: 30px 29px;
+}
+
+.u-cookies-consent .u-btn-1 {
+  align-self: center;
+  margin: 0 auto 0 143px;
+}
+
+.u-cookies-consent .u-btn-2 {
+  margin: -42px auto 0 0;
+}
+
+@media (max-width: 1199px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 131px;
+  }
+
+  .u-cookies-consent .u-layout-wrap-1 {
+    width: auto;
+  }
+
+  .u-cookies-consent .u-layout-cell-1 {
+    min-height: 124px;
+  }
+
+  .u-cookies-consent .u-text-1 {
+    margin-right: 0;
+  }
+
+  .u-cookies-consent .u-layout-cell-2 {
+    min-height: 126px;
+  }
+
+  .u-cookies-consent .u-btn-1 {
+    margin-left: 115px;
+  }
+
+  .u-cookies-consent .u-btn-2 {
+    margin-top: -42px;
+    margin-left: -28px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 106px;
+  }
+
+  .u-cookies-consent .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-cookies-consent .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-cookies-consent .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-cookies-consent .u-btn-1 {
+    margin-left: 83px;
+  }
+
+  .u-cookies-consent .u-btn-2 {
+    margin-left: -60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 225px;
+  }
+
+  .u-cookies-consent .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .u-cookies-consent .u-container-layout-2 {
+    padding: 10px;
+  }
+
+  .u-cookies-consent .u-btn-1 {
+    margin-left: 271px;
+  }
+
+  .u-cookies-consent .u-btn-2 {
+    margin-left: 128px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 121px;
+  }
+
+  .u-cookies-consent .u-btn-1 {
+    margin-left: 171px;
+  }
+
+  .u-cookies-consent .u-btn-2 {
+    margin-left: 28px;
+  }
+}</style></section>
   
 </body></html>
