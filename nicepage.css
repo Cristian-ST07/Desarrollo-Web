@@ -45386,7 +45386,17 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 
+@media (max-width: 575px) {
+  .u-header .u-menu-1 {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
 
+  .u-header .u-hamburger-link-1 {
+    font-size: calc(1em + 4.5px);
+    padding: 2px 3px;
+  }
+}
 .u-footer .u-sheet-1 {
   min-height: 120px;
 }
