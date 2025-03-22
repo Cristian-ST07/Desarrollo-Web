@@ -30,8 +30,6 @@
 }
 
 .u-section-1 .u-text-1 {
-  font-weight: 700;
-  font-size: 3rem;
   margin: 0 0 0 auto;
 }
 
@@ -409,11 +407,11 @@
     margin-bottom: 80px;
   }
 }.u-section-6 .u-sheet-1 {
-  min-height: 247px;
+  min-height: 342px;
 }
 
 .u-section-6 .u-layout-wrap-1 {
-  margin-top: 58px;
+  margin-top: 11px;
   margin-bottom: 60px;
 }
 
@@ -521,5 +519,9 @@
 @media (max-width: 575px) {
   .u-section-6 .u-sheet-1 {
     min-height: 356px;
+  }
+
+  .u-section-6 .u-btn-1 {
+    --radius: 15px;
   }
 }
