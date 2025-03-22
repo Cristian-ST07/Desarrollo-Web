@@ -174,7 +174,7 @@
 }
 
 .u-section-2 .u-text-1 {
-  font-weight: 400;
+  font-weight: 700;
   margin: 70px 179px 0 0;
 }
 
@@ -277,7 +277,6 @@
 
 @media (max-width: 575px) {
   .u-section-2 .u-text-1 {
-    font-weight: 700;
     margin-right: 0;
   }
 
